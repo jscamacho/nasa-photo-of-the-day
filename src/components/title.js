@@ -7,20 +7,19 @@ const WrapperDiv = styled.div`
 `;
 
 const H1Wrap = styled.h1`
-    font-size: 2rem;
-    color: midnightblue;
+    font-size: 4.3rem;
+    color: black;
     padding-right: 2%;
-    padding-top: 1%;
-    padding-bottom: 1%;
 `;
 
+const Title = ({title})=>{
 
-const Date = ({date})=>{
     return(
         <WrapperDiv>
-            <H1Wrap>Hello,<br/>today's date is {date}</H1Wrap>
+            <H1Wrap>{title}</H1Wrap>
         </WrapperDiv>
     )
+
 }
 
-export default Date;
+export default Title;
