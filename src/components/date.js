@@ -18,7 +18,7 @@ const H1Wrap = styled.h1`
 const Date = ({date})=>{
     return(
         <WrapperDiv>
-            <H1Wrap>Hello,<br/>today's date is {date}</H1Wrap>
+            <H1Wrap>Hello World,<br/>Date: {date} <br/> Today's Featured Picture is:</H1Wrap>
         </WrapperDiv>
     )
 }

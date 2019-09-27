@@ -44,7 +44,7 @@ function App() {
   const [file, setFile] = useState();
 
   useEffect(()=>{
-    axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+    axios.get('https://api.nasa.gov/planetary/apod?api_key=L10ilxbClz8EweDNCKAWsidiv10o6MR9WdzU4UZ7')
       .then((stuff)=>{
         console.log(stuff.data);
         setFile(stuff.data);
@@ -64,7 +64,7 @@ function App() {
 
   if(file){
     date = file.date;
-    about = file.about;
+    about = file.explanation;
     url = file.url;
     title = file.title;
     copy = file.footer;
